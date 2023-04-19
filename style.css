@@ -1,0 +1,12 @@
+      * {
+          background-color: rgb(255, 216, 222);
+          margin: 10px;
+          padding-right: 30px;
+          text-align:left;
+      }
+
+      form {
+        background-color: azure;
+         display: flex;
+         flex-direction: column;  
+      }

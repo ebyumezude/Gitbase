@@ -7,24 +7,42 @@
       content="A website built by eby_umezude for Sidehustle week1 task"
     />
     <title>My first web page</title>
+    <link rel="Stylesheet" href="style.css" />
+    <style>
+      .Fim {
+        font-size: large;
+        font-weight: 100;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: inherit;
+      }
+    </style>
   </head>
   <body>
     <form>
-      <p>Name:<input type="text" value="Enter your full name" /></p>
-      <p>Date of Birth:<input type="date" /></p>
-      <p>Upload Passport:<input type="file" /></p>
-      <div><em>Gender</em></div>
+      <label for="name" class="Fim">Name: </label>
+      <input type="text" value="Enter your full name" /> <br />
+      <label for="Date" class="Fim">Date of Birth:</label>
+      <input type="date" /> <br />
+      <label for="Picture" class="Fim"
+        >Upload Passport:<input type="file"
+      /></label>
+      <br />
+      <div><label for="Gender" class="Fim">Gender</label></div>
       <div>
-        F<input name="gender" type="radio" /> M<input
+        Male<input name="gender" type="radio" /> Female<input
           name="gender"
           type="radio"
         />
+        Prefer not to disclose <input name="gender" type="radio" />
       </div>
-      <textarea rows="5" cols="30">
+      <textarea rows="5" cols="30" class="Fim">
 Tell us more about yourself
     </textarea
       >
-      <p>Enter a password to continue<input type="password" /></p>
+      <br />
+      <label for="Password" class="Fim">Enter a password to continue </label>
+      <input type="password" /> <br />
+      <input type="submit" value="Submit" />
     </form>
   </body>
 </html>
